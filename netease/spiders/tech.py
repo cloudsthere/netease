@@ -10,10 +10,10 @@ class TechSpider(scrapy.Spider):
     start_urls = ['http://tech.163.com/gd/']
 
     # 打开数据库连接
-    db = pymysql.connect("192.168.10.10","homestead","secret","wordpress", charset = 'utf8' )
+    # db = pymysql.connect("192.168.10.10","homestead","secret","wordpress", charset = 'utf8' )
      
     # 使用 cursor() 方法创建一个游标对象 cursor
-    cursor = db.cursor()
+    # cursor = db.cursor()
 
     # 当前列表页
     page = 1;

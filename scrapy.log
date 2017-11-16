@@ -6062,3 +6062,53 @@ twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostnam
 2017-10-29 23:10:46 [scrapy.core.engine] INFO: Spider closed (finished)
 2017-11-13 21:39:02 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: netease)
 2017-11-13 21:39:02 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'netease', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'netease.spiders', 'SPIDER_MODULES': ['netease.spiders']}
+2017-11-16 10:38:23 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: netease)
+2017-11-16 10:38:23 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'netease', 'LOG_ENABLED': False, 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'netease.spiders', 'SPIDER_MODULES': ['netease.spiders']}
+2017-11-16 11:56:56 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: netease)
+2017-11-16 11:56:56 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'netease', 'LOG_ENABLED': False, 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'netease.spiders', 'SPIDER_MODULES': ['netease.spiders']}
+2017-11-16 13:24:51 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: netease)
+2017-11-16 13:24:51 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'netease', 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter', 'LOGSTATS_INTERVAL': 0, 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'netease.spiders', 'SPIDER_MODULES': ['netease.spiders']}
+2017-11-16 13:24:51 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2017-11-16 13:24:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-16 13:24:51 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-16 13:24:51 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-11-16 13:24:51 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-11-16 13:24:51 [scrapy.core.engine] INFO: Spider opened
+2017-11-16 13:24:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://it.ithome.com/> (referer: None)
+2017-11-16 13:44:30 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: netease)
+2017-11-16 13:44:30 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'netease', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'netease.spiders', 'SPIDER_MODULES': ['netease.spiders']}
+2017-11-16 13:44:30 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-11-16 13:44:30 [twisted] CRITICAL: Unhandled error in Deferred:
+2017-11-16 13:44:30 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "d:\programs\python3.6\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\programs\python3.6\lib\site-packages\scrapy\crawler.py", line 76, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "d:\programs\python3.6\lib\site-packages\scrapy\crawler.py", line 99, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "d:\programs\python3.6\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'last_crawl_time'

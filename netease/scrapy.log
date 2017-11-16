@@ -3904,3 +3904,57 @@ twisted.internet.error.TimeoutError: User timeout caused connection failure: Get
  'scheduler/enqueued/memory': 21,
  'start_time': datetime.datetime(2017, 11, 15, 14, 12, 28, 143313)}
 2017-11-15 22:12:51 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-11-16 13:44:40 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: netease)
+2017-11-16 13:44:40 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'netease', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'netease.spiders', 'SPIDER_MODULES': ['netease.spiders']}
+2017-11-16 13:44:40 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-11-16 13:44:40 [twisted] CRITICAL: Unhandled error in Deferred:
+2017-11-16 13:44:40 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "d:\programs\python3.6\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\programs\python3.6\lib\site-packages\scrapy\crawler.py", line 76, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "d:\programs\python3.6\lib\site-packages\scrapy\crawler.py", line 99, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "d:\programs\python3.6\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'last_crawl_time'
+2017-11-16 14:36:05 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: netease)
+2017-11-16 14:36:05 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'netease', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'netease.spiders', 'SPIDER_MODULES': ['netease.spiders']}
+2017-11-16 14:36:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-11-16 14:36:05 [twisted] CRITICAL: Unhandled error in Deferred:
+2017-11-16 14:36:05 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "d:\programs\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\programs\lib\site-packages\scrapy\crawler.py", line 76, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "d:\programs\lib\site-packages\scrapy\crawler.py", line 99, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "d:\programs\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'last_crawl_time'
+2017-11-16 15:36:25 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: netease)
+2017-11-16 15:36:25 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'netease', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'netease.spiders', 'SPIDER_MODULES': ['netease.spiders']}
+2017-11-16 15:36:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-11-16 15:36:25 [twisted] CRITICAL: Unhandled error in Deferred:
+2017-11-16 15:36:25 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "d:\programs\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\programs\lib\site-packages\scrapy\crawler.py", line 76, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "d:\programs\lib\site-packages\scrapy\crawler.py", line 99, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "d:\programs\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'last_crawl_time'
